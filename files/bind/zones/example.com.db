@@ -9,6 +9,6 @@ $TTL 1D
 
 example.com. IN NS ns1.example.com.
 
-ns1   IN A 1.2.3.100
-foo   IN A 1.2.3.101
-www   IN CNAME example.com.
+ns1   IN A 192.168.100.122
+foo   IN A 192.168.100.122
+www   IN CNAME foo.example.com.
