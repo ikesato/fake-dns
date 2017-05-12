@@ -1,0 +1,14 @@
+; BIND reverse data file for empty rfc1918 zone
+;
+$TTL 1D
+
+@ IN SOA ns.example.com. root.example.com (
+    2017051101 ; Serial
+    1h         ; Refresh
+    15M        ; Retry
+    1W         ; Expire
+    1D )       ; Default TTL
+
+           IN NS ns1.example.com.
+100        IN PTR ns1
+101        IN PTR foo

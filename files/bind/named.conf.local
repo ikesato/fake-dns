@@ -1,0 +1,9 @@
+zone "example.com" {
+    type master;
+    file "/etc/bind/zones/example.com.db";
+};
+
+zone "3.2.1.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/rev.example.com.db";
+};

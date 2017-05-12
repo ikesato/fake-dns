@@ -1,0 +1,14 @@
+$TTL 1D
+
+@ IN SOA ns1.example.com. root.example.com. (
+    2017051101 ; Serial
+    1h         ; Refresh
+    15M        ; Retry
+    1W         ; Expire
+    1D )       ; Default TTL
+
+example.com. IN NS ns1.example.com.
+
+ns1   IN A 1.2.3.100
+foo   IN A 1.2.3.101
+www   IN CNAME example.com.
